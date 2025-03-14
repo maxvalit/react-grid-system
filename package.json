@@ -5,7 +5,7 @@
   "main": "./build/index.js",
   "scripts": {
     "start": "styleguidist server",
-    "build": "rimraf build && npx browserslist --update-db && babel src -d build",
+    "build": "rimraf build && babel src -d build",
     "docs": "styleguidist build",
     "lint": "eslint *.js src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,7 +33,6 @@
     "url": "https://github.com/sealninja/react-grid-system/issues"
   },
   "homepage": "https://github.com/sealninja/react-grid-system/issues",
-  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "peerDependencies": {
     "react": "^16.8.0 || ^17.x || ^18.x || ^19.x"
   },
@@ -43,26 +42,13 @@
   "devDependencies": {
     "@babel/cli": "7.25.9",
     "@babel/core": "7.26.9",
-    "@babel/eslint-parser": "7.26.10",
+
     "@babel/preset-env": "7.26.9",
     "@babel/preset-react": "7.25.9",
     "babel-eslint": "10.1.0",
     "babel-loader": "10.0.0",
-    "eslint": "9.22.0",
-    "@eslint/compat": "1.2.7",
-    "@eslint/eslintrc": "3.3.0",
-    "@eslint/js": "9.22.0",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-prettier": "10.1.1",
-    "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-prettier": "5.2.3",
-    "eslint-plugin-react": "7.37.4",
-    "eslint-plugin-react-hooks": "5.2.0",
-    "prettier": "3.5.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-styleguidist": "13.1.4",
     "rimraf": "6.0.1",
     "webpack": "5.98.0"
   }
